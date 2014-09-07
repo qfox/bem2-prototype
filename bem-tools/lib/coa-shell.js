@@ -1,17 +1,16 @@
 'use strict';
 
-var Q = require('q'),
-    CP = require('child_process');
-
-Q.longStackJumpLimit = 0;
+var VOW = require('vow');
+var CP = require('child_process');
 
 module.exports = function () {
-    this.act(function () {
 
-        var defer = Q.defer(),
-            readline = require('readline'),
-            rl = readline.createInterface(process.stdin, process.stdout),
-            prefix = '> ';
+    this.act(function () {
+        var defer = VOW.defer();
+        var readline = require('readline');
+        var rl = readline.createInterface(process.stdin, process.stdout);
+        var prefix = '> ';
+
         rl.setPrompt(prefix, prefix.length);
 
         rl.on('line', function(line) {
@@ -38,7 +37,8 @@ module.exports = function () {
         /* jshint +W109 */
         rl.prompt();
 
-        return defer.promise;
+        return defer.promise();
 
     });
+
 };
