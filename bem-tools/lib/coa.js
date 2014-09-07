@@ -1,5 +1,3 @@
-'use strict';
-
 var PATH = require('path');
 
 module.exports = require('coa').Cmd()
@@ -19,7 +17,5 @@ module.exports = require('coa').Cmd()
         })
         .end()
 
-    .completable()
-
-    // todo: fix this up when veged/coa#40 will be resolved
-    .apply(require('./coa-shell.js'));
+    .completable();
+    // .repl() waiting for veged/coa#40

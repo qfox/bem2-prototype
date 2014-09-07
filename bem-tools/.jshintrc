@@ -1,6 +1,5 @@
 {
     "node": true,
-    "globalstrict": true,
     "mocha": true,
     "expr": true,
     "curly": false,
