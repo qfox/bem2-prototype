@@ -1,0 +1,19 @@
+{
+  "name": "project-stub",
+  "version": "0.0.0",
+  "description": "stub for bem v2",
+  "main": "index.js",
+  "author": "Alexej Yaroshevich <zxqfox@gmail.com> (http://github.com/zxqfox)",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@git.qfox.ru/bem/project-stub.git"
+  },
+  "dependencies": {
+    "bem": "git+ssh://git@git.qfox.ru:bem/bem-tools.git",
+    "bem-config": "git+ssh://git@git.qfox.ru:bem/bem-config.git"
+  }
+}

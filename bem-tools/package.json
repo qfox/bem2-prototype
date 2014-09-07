@@ -1,0 +1,56 @@
+{
+  "name": "bem",
+  "version": "2.0.0-concept",
+  "description": "bem-tools v2 concept",
+  "main": "index.js",
+  "author": "Alexej Yaroshevich <zxqfox@gmail.com> (http://github.com/zxqfox)",
+  "homepage": "http://github.com/bem/bem-tools",
+  "maintainers": [
+    "Alexej Yaroshevich <zxqfox@gmail.com> (http://github.com/zxqfox)"
+  ],
+  "keywords": [
+    "bem"
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://github.com/bem/bem-tools/raw/master/LICENSE"
+    }
+  ],
+  "directories": {
+    "lib": "./lib"
+  },
+  "bin": {
+    "bem": "./bin/bem"
+  },
+  "dependencies": {
+    "ym": "zxqfox/modules#bem-tools",
+    "coa": "0.4.x",
+    "q": "0.9.x",
+    "architect": "zxqfox/architect#bem-tools"
+  },
+  "devDependencies": {
+  },
+  "engines": {
+    "node": ">=0.8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:zxqfox/bem-tools-v2-concept"
+  },
+  "bugs": {
+    "url": "https://github.com/zxqfox/bem-tools-v2-concept/issues"
+  },
+  "private": true,
+  "npm2debian": {
+    "bash-completion": {
+      "bem": {
+        "script": "./bin/bem completion"
+      }
+    }
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "./node_modules/.bin/jshint bin lib && ./node_modules/.bin/jscs bin lib && ./node_modules/.bin/mocha"
+  }
+}

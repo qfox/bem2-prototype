@@ -1,0 +1,50 @@
+{
+  "name": "bem-config",
+  "version": "0.0.0",
+  "homepage": "http://github.com/zxqfox/bem-config",
+  "author": "Alexej Yaroshevich <zxqfox@gmail.com> (http://github.com/zxqfox)",
+  "bugs": {
+    "url": "http://github.com/zxqfox/bem-config/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.qfox.ru:bem/bem-config.git"
+  },
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "bin": {
+    "bem-config": "bin/bem-config"
+  },
+  "plugin": {
+    "provides": ["config"]
+  },
+  "dependencies": {
+    "coa": "0.4.x",
+    "q": "0.9.x",
+    "update-notifier": "*"
+  },
+  "devDependencies": {
+    "chai": "*",
+    "chai-as-promised": "*",
+    "istanbul": "*",
+    "mocha-as-promised": "*",
+    "mocha-istanbul": "*",
+    "mocha": "*",
+    "coveralls": "*"
+  },
+  "peerDependecies": {
+    "bem": "*"
+  },
+  "optionalDependencies": {},
+  "scripts": {
+    "test": "make test",
+    "coverage": "make coverage"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://github.com/zxqfox/bem-config/raw/master/LICENSE"
+    }
+  ]
+}

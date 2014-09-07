@@ -1,0 +1,7 @@
+#!/usr/bin/env node
+/*jshint node: true */
+
+// Do not limit stack trace
+Error.stackTraceLimit = Infinity;
+
+require('../lib/coa').run();
